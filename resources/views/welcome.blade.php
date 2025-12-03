@@ -25,7 +25,29 @@
     <!-- exercise description section -->
 
     <section class="flex-col items-center justify-center mb-10">
+        <p>Oggi facciamo la nostra prima vera interazione con il database utilizzando Eloquent, l’ORM di Laravel!</p>
+        <img src="{{ Vite::asset('./resources/img/screen.png')}}" alt="screenshot" class="w-250 mx-auto my-5">
+        <h3 class="text-3xl py-3">SVOLGIMENTO</h3>
+        <ol class="text-center list-decimal list-inside max-w-lg mx-auto">
+            <li>Create un nuovo progetto Laravel</li> 
+            <li>tramite phpMyAdmin o MySQL Workbench create un nuovo database laravel_model_controller</li>
+            <li>Importate nel vostro database la tabella movies in allegato</li>
+            <li>inserite le vostre credenziali per il database nel file .env</li>
+            <li>Create un model Movie.php col comando php artisan make:model Movie</li>
+            <li>Create un controller che gestirà la rotta / col comando php artisan make:controller Guest/PageController</li>
+            <li>All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che
+            quindi li visualizzerà a schermo, tramite delle card.</li>
+        </ol>
+        <h4 class="text-3xl py-3">BONUS</h4>
+        <p>
+            Inventare una grafica a piacere per il sito e realizzarne il layout, aggiungendo lo stile con SASS.
+        </p>
+        <div>
         
+            <a href="/home" class="mt-6 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Vai all'esercizio
+            </a>
+        </div>
     </section>
 
     @endsection
