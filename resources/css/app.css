@@ -10,5 +10,26 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.ex-list{
+    position: relative;
+}
+.subtext-1{
+   position: absolute;
+ top : 0 ;
+ left : 100% ;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    width:250px;
+    display: none;
+    
+}
 
+.group-1:hover{
 
+    background-color: rgb(213, 222, 222);
+}
+
+.group-1:hover .subtext-1{
+    display: block;
+}
