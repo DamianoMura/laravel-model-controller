@@ -3,20 +3,21 @@ $links=config('links');
 ?>
 
 
-    <nav class="container mx-auto flex justify-between items-center py-4">
+    <nav class="mx-auto flex justify-between items-center py-4 bg-blue-400 px-6 rounded-md mb-6">
         <div>
-            <a href="/">
-                logo
+            <a href="/home" class="text-2xl font-bold flex items-center gap-2s">
+              < <img src="{{Vite::asset('./resources/img/logo-jdw-trans-black.png')}}" alt="jdw logo" class="h-8 "> 
+               <span> {{"dev.it>"}} </span>
             </a>
         </div>
             
-        <div class="hidden lg:flex">
+        {{-- <div class="hidden lg:flex">
             <ul class="flex-end">
                <li class="flex gap-6">
                 links
                </li>
             </ul>
-        </div>
+        </div> --}}
 
         <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
